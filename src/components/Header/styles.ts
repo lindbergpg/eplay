@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breackpoints, cores } from '../../styles'
 
 export const HeaderBar = styled.header`
   background: ${cores.cinza};
@@ -19,6 +19,10 @@ export const HeaderBar = styled.header`
     color: ${cores.branca};
     text-decoration: none;
     font-weight: bold;
+  }
+
+  @media (max-width: ${breackpoints.tablet}) {
+    display: none;
   }
 `
 
